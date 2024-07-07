@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full html</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+        }
+         th{
+               background-color: rgb(167, 167, 212);
+        }
+        #empinfo tr:nth-child(odd){
+            background-color: gray;
+        }
+        #empinfo tr:nth-child(even){
+            background-color: lightgray;
+        }
+        #main_table_heading{
+            text-align: center;
+        }
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: brown;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h2>links</h2>
+    <a href="about.html" target="_blank ">Html tags</a><br>
+    <a href="mailtos@proton.me">Email Me!</a><br>
+   <a href="#phone">Contact Me</a><br>
+
+    <a href="about.html" target="_blank"><img src="images/web_image_02.jpg" alt="girl with computer"></a>
+    <h1>Table</h1>
+    <table id="empinfo" style="width: 400px" > 
+        <!--in  <table border="1"> 0is for border off as-default but it is not good practice,in style we will define border-->
+            <tr id="main_table_heading">
+                <td colspan="5">Employee data</td>
+            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Place</th>
+            <th>Dep</th>
+        </tr> 
+        <tr><td>1</td>
+            <td>Himanshi</td>
+            <td>30</td>
+            <td>Mumbai</td>
+            <td>It</td>
+    
+        </tr> <tr><td>2</td>
+            <td>Bhavana</td>
+            <td>31</td>
+            <td>Delhi</td>
+            <td>sales</td>
+    
+        </tr>
+        <tr><td>3</td>
+            <td>Gauri</td>
+            <td>28</td>
+            <td>Bhopal</td>
+            <td>HR</td>
+    
+        </tr>
+        <tr><td>4</td>
+            <td>Payal</td>
+            <td>29</td>
+            <td>Raipur</td>
+            <td>Teacher</td>
+    
+        </tr>
+
+    </table>
+    <br>
+   <a href="javascript:alert('you clicked on image!')"><img src="images/web_Image_01.jpg"></a> 
+    <h2>Form</h2>
+    <form name="form1" action="" method="get">
+        <label for="fName">Name</label><br>
+        <input type="text" name="fName" id="fName"><br>
+        <label for="id">Email id</label><br>
+        <input type="email" name="emailid" id="emailid"><br>
+        <label for="fName">subject</label><br>
+        <input type="text" name="subject" id="subject"><br>
+        <label for comments>Comments</label><br>
+        <textarea name="comments" id="comments">Add comments...</textarea><br>
+        Subscribe<br>
+        <input type="radio" name="subscribe" id="yes" ><label for="yes">yes</label>
+        <input type="radio" name="subscribe" id="no" ><label for="no">no</label><br>
+        <hr>
+        <input type="submit" value="send">
+    </form>
+<!-- HTML Input Tag Types
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+<h2>list</h2>
+<ul style="list-style-type: circle;">
+    <li>milk</li>
+    <li>coffee</li>
+    <li>tea</li>
+   </ul>
+   <br>
+   <ol style="list-style-image: url('images/Shades-01.PNG');">
+    <li>milk</li>
+    <li>coffee</li>
+    <li>tea</li>
+   </ol>
+   <br>
+   <dl>
+    <dt>milk</dt>
+    <dd>milk is of white in color</dd>
+    <dt>coffee</dt>
+    <dd>coffee is of black in color</dd>
+    <dt>Tea</dt>
+    <dd>some time black and some time white</dd>
+   </dl>
+   <h2>paragrapgh</h2>
+   <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt, dignissimos delectus eveniet, rerum voluptates doloribus et odio odit esse ab quo ea porro modi beatae eum non inventore illo.
+   Quis itaque eos eveniet nesciunt voluptatibus ab sit accusamus doloremque, mollitia dolorem quod labore, molestias atque odit minus doloribus, saepe veritatis placeat porro ratione fugiat. Perspiciatis impedit sunt ab modi.
+   Natus dicta quis, molestias doloribus est sequi rerum totam eum fugit explicabo cupiditate repellat quam porro dolore. Esse, hic neque debitis a pariatur, vitae eius, illum at laborum explicabo fugit.
+   Beatae, earum. Minus neque natus mollitia, molestias repellendus totam tenetur quis obcaecati dicta, doloribus suscipit voluptate earum quos, at consequatur pariatur adipisci nulla sed excepturi? Vel earum in amet nemo!</p>
+
+<a id="phone" href="tel:+15555555555">+1 555 555555</a><br>
+</body>
+</html>
